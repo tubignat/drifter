@@ -1,0 +1,50 @@
+{
+  "name": "drifter",
+  "version": "1.0.0",
+  "description": "A TypeScript library template",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "example": "ts-node examples/$npm_config_example.ts",
+    "example:todo": "ts-node examples/todo.ts",
+    "example:counter": "ts-node examples/counter.ts",
+    "example:blackjack": "ts-node examples/blackjack.ts"
+  },
+  "keywords": [
+    "typescript",
+    "library",
+    "template"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.6.2",
+    "@types/node-telegram-bot-api": "^0.64.11",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/drifter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/drifter/issues"
+  },
+  "homepage": "https://github.com/yourusername/drifter#readme"
+}
