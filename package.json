@@ -1,6 +1,6 @@
 {
-  "name": "drifter",
-  "version": "1.0.0",
+  "name": "drifter-js",
+  "version": "0.0.1",
   "description": "A TypeScript library template",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
